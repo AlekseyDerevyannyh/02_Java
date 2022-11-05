@@ -1,5 +1,3 @@
-import java.io.*
-
 public class SimpleDotCom {
 
 	int[] locationCells;
@@ -58,42 +56,4 @@ public class SimpleDotCom {
 		return result;
 	}
 
-}
-
-public class SimpleDotComTestDrive {
-
-	public static void main (String[] args) {
-
-		SimpleDotCom dot = new SimpleDotCom();
-
-		int[] locations = {2, 3, 4};
-
-		dot.setLocationCells(locations);
-
-		String userGuess = "2";
-		String result = dot.checkYourself(userGuess);
-		String testResult = "Неудача";
-
-		if (result.equals("Попал") {
-			testResult = "Пройден";
-		}
-
-		System.out.println(testResult);
-
-	}
-}
-
-public class GameHelper {
-	public String getUserInput (String prompt) {
-		String inputLine = null;
-		System.out.print(prompt + " ");
-		try {
-			BufferedReader is = new BufferedReader (new InputStreamReader(System.in));
-			inputLine = is.readLine();
-			if (inputLine.length() == 0)	return null;
-		} catch (IOException e) {
-			System.out.println("IOException: " + e);
-		}
-		return inputLine;
-	}
 }
