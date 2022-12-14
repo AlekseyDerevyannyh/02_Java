@@ -3,8 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+tmp/
+.idea/
+target/
+resources/
 *.class
-/tmp/*
+*.iml
 # User-specific files
 
 *.rsuser
